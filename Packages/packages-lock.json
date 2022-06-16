@@ -10,7 +10,7 @@
       "url": "https://normcore-registry.normcore.io"
     },
     "com.unity.collab-proxy": {
-      "version": "1.15.16",
+      "version": "1.15.17",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -66,6 +66,13 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.nuget.newtonsoft-json": {
+      "version": "3.0.2",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.probuilder": {
       "version": "5.0.4",
       "depth": 0,
@@ -78,11 +85,13 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.services.core": {
-      "version": "1.0.1",
+      "version": "1.4.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.modules.unitywebrequest": "1.0.0"
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.nuget.newtonsoft-json": "3.0.2",
+        "com.unity.modules.androidjni": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
@@ -144,7 +153,7 @@
       }
     },
     "com.unity.visualscripting": {
-      "version": "1.7.6",
+      "version": "1.7.8",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -200,7 +209,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.openxr": {
-      "version": "1.4.1",
+      "version": "1.4.2",
       "depth": 0,
       "source": "registry",
       "dependencies": {
