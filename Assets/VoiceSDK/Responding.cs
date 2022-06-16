@@ -5,6 +5,10 @@ using UnityEngine;
 public class Responding : MonoBehaviour
 {
     private Animator animator;
+    public GameObject _firstCanva;
+    public GameObject _secondCanva;
+    public GameObject _thirdCanva;
+    public GameObject _onePage;
 
     // Start is called before the first frame update
     void Start()
@@ -31,12 +35,26 @@ public class Responding : MonoBehaviour
     {
         print("StartIntro wurde aufgerufen");
         //play introduction text
+        _firstCanva.SetActive(false);
+        _secondCanva.SetActive(true);
     }
 
     public void StartOnePage(string[] values)
     {
         print("StartOnePage wurde aufgerufen");
         //allow writing
+        if(_secondCanva.activeSelf)
+        {
+            _secondCanva.SetActive(false);
+            _thirdCanva.SetActive(true);
+            _onePage.SetActive(true);
+        }
+        else if(_firstCanva.activeSelf)
+        {
+           _firstCanva.SetActive(false);
+           _secondCanva.SetActive(true);
+        }
+        
     }
 
     public void StopOnePage(string[] values)
