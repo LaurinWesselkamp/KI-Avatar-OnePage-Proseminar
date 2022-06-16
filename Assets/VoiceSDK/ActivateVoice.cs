@@ -3,15 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using Facebook.WitAi;
 using UnityEngine.InputSystem;
+using Oculus.Voice;
 
 public class ActivateVoice : MonoBehaviour
 {
-    [SerializeField]
-    private Wit wit;
+    public AudioClip click;
+
+    [SerializeField] private AppVoiceExperience voiceExperience;
+
+    private void OnValidate()
+    {
+        if (!voiceExperience) voiceExperience = GetComponent<AppVoiceExperience>();
+    }
 
     private void Start()
     {
-        if (wit == null) wit = GetComponent<Wit>();
+       voiceExperience = GetComponent<AppVoiceExperience>();
     }
 
     private void Update()
@@ -19,12 +26,13 @@ public class ActivateVoice : MonoBehaviour
         if(OVRInput.GetDown(OVRInput.Button.One))
         {
             print("Button A wurde gedrückt!");
+            AudioSource.PlayClipAtPoint(click, transform.position);
             WitActivate();
         }
     }
 
     public void WitActivate()
     {
-        wit.Activate();
+        voiceExperience.Activate();
     }
 }

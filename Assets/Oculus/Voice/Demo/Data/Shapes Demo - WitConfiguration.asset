@@ -13,15 +13,240 @@ MonoBehaviour:
   m_Name: Shapes Demo - WitConfiguration
   m_EditorClassIdentifier: 
   application:
-    witConfiguration: {fileID: 0}
-    name: 
-    id: 
-    lang: 
+    witConfiguration: {fileID: 11400000}
+    name: aiavatar
+    id: 2082854371873116
+    lang: de
     isPrivate: 0
-    createdAt: 
+    createdAt: 2022-06-03T05:31:51-0700
   configId: 4e21a24e472ab684e84db753427d5687
-  clientAccessToken: 
-  entities: []
-  intents: []
+  clientAccessToken: BJLFP7VUYXGV3BCUY5KBXASGB36Q4JAL
+  timeoutMS: 10000
+  endpointConfiguration:
+    uriScheme: 
+    authority: 
+    port: 0
+    witApiVersion: 
+    speech: 
+    message: 
+  entities:
+  - witConfiguration: {fileID: 11400000}
+    id: 801023400879816
+    name: FriendlyGreeting
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - id: 591864658974847
+      name: FriendlyGreeting
+    keywords:
+    - keyword: .
+      synonyms:
+      - .
+    - keyword: Abend
+      synonyms:
+      - abend
+    - keyword: Alola
+      synonyms:
+      - alola
+    - keyword: Guten Tag
+      synonyms:
+      - guten tag
+    - keyword: Hallo
+      synonyms:
+      - hallo
+    - keyword: Hallo?
+      synonyms:
+      - hallo?
+    - keyword: Hello
+      synonyms:
+      - hello
+    - keyword: Herzlich
+      synonyms:
+      - herzlich
+    - keyword: Hi
+      synonyms:
+      - hi
+    - keyword: Hola
+      synonyms:
+      - hola
+    - keyword: Moin
+      synonyms:
+      - moin
+    - keyword: Morgen
+      synonyms:
+      - morgen
+    - keyword: Nachmittag
+      synonyms:
+      - nachmittag
+    - keyword: "Sch\xF6nen Tag"
+      synonyms:
+      - "sch\xF6nen tag"
+    - keyword: a
+      synonyms:
+      - aloha
+    - keyword: einen
+      synonyms:
+      - einen
+    - keyword: "sch\xF6nen guten Tag"
+      synonyms:
+      - "sch\xF6nen guten tag"
+    - keyword: tag
+      synonyms:
+      - tag
+    - keyword: "w\xFCnsche"
+      synonyms:
+      - "\xFCnsche i"
+  - witConfiguration: {fileID: 11400000}
+    id: 1188312051933514
+    name: PlayIntro
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - id: 1150518255741210
+      name: PlayIntro
+    keywords:
+    - keyword: Hilfe.
+      synonyms:
+      - hilfe.
+    - keyword: Wie funktioniert das
+      synonyms:
+      - wie funktioniert das
+    - keyword: Wie geht das?
+      synonyms:
+      - wie geht das?
+    - keyword: "erkl\xE4re"
+      synonyms:
+      - "erkl\xE4re"
+  - witConfiguration: {fileID: 11400000}
+    id: 558598272540871
+    name: Stop
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - id: 7776453625728480
+      name: Stop
+    keywords:
+    - keyword: "H\xF6ren wir auf"
+      synonyms:
+      - "h\xF6ren wir auf"
+  - witConfiguration: {fileID: 11400000}
+    id: 557536979292551
+    name: Thanks
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - id: 506082687882336
+      name: Thanks
+    keywords:
+    - keyword: Arigato
+      synonyms:
+      - arigato
+    - keyword: "Dankesch\xF6n"
+      synonyms:
+      - "dankesch\xF6n"
+    - keyword: Gut gemacht
+      synonyms:
+      - gut gemacht
+    - keyword: Gute Arbeit
+      synonyms:
+      - gute arbeit
+    - keyword: Vielen Dank
+      synonyms:
+      - vielen dank
+  - witConfiguration: {fileID: 11400000}
+    id: 1114932392390888
+    name: ThinkLetStart
+    lookups:
+    - free-text
+    - keywords
+    roles:
+    - id: 683357946076138
+      name: ThinkLetStart
+    keywords:
+    - keyword: Anfangen
+      synonyms:
+      - Anfangen
+    - keyword: Fangen wir an
+      synonyms:
+      - fangen wir an
+    - keyword: Legen wir los
+      synonyms:
+      - Legen wir los
+    - keyword: Los gehts
+      synonyms:
+      - los gehts
+    - keyword: Star
+      synonyms:
+      - star
+    - keyword: Starte
+      synonyms:
+      - starte
+    - keyword: Starten
+      synonyms:
+      - starten
+    - keyword: Stop
+      synonyms:
+      - stop
+  intents:
+  - witConfiguration: {fileID: 11400000}
+    id: 1910902632442454
+    name: Greeting
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 591864658974847
+      name: FriendlyGreeting:FriendlyGreeting
+      lookups: []
+      roles: []
+      keywords: []
+    - witConfiguration: {fileID: 11400000}
+      id: 683357946076138
+      name: ThinkLetStart:ThinkLetStart
+      lookups: []
+      roles: []
+      keywords: []
+  - witConfiguration: {fileID: 11400000}
+    id: 750787159278773
+    name: Introduction
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 1150518255741210
+      name: PlayIntro:PlayIntro
+      lookups: []
+      roles: []
+      keywords: []
+  - witConfiguration: {fileID: 11400000}
+    id: 728407418350304
+    name: StartOnePage
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 683357946076138
+      name: ThinkLetStart:ThinkLetStart
+      lookups: []
+      roles: []
+      keywords: []
+  - witConfiguration: {fileID: 11400000}
+    id: 1424284734677613
+    name: StopCollecting
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 7776453625728480
+      name: Stop:Stop
+      lookups: []
+      roles: []
+      keywords: []
+  - witConfiguration: {fileID: 11400000}
+    id: 439591097992937
+    name: Thanks
+    entities:
+    - witConfiguration: {fileID: 11400000}
+      id: 506082687882336
+      name: Thanks:Thanks
+      lookups: []
+      roles: []
+      keywords: []
   traits: []
   isDemoOnly: 1
