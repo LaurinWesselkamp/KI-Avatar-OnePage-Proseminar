@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,11 @@ public class Responding : MonoBehaviour
     public GameObject _explain2Canva;
     public GameObject _talkCanva;
     public GameObject _onePage;
+    public GameObject _ideenAll;
+    public GameObject _timer;
+    public GameObject _ausgabeFenster;
+    public bool schonErklaert = false;
+    public bool onePageGestartet = false;
 
     // Start is called before the first frame update
     void Start()
@@ -45,8 +51,13 @@ public class Responding : MonoBehaviour
     {
         print("StartOnePage wurde aufgerufen");
         CanvaNoOverlapping();
+
         _startOnePageCanva.SetActive(true);
         _onePage.SetActive(true);
+        _timer.SetActive(true);
+        _ausgabeFenster.SetActive(true);
+
+        onePageGestartet = true;
         
     }
 
@@ -54,7 +65,13 @@ public class Responding : MonoBehaviour
     {
         print("StopOnePage wurde aufgerufen");
         CanvaNoOverlapping();
+
+        _onePage.SetActive(false);
+        _startOnePageCanva.SetActive(false);
+        _timer.SetActive(false);
+
         _endCanva.SetActive(true);
+        _ideenAll.SetActive(true);
     }
 
     public void ReactThanks(string[] values)
@@ -62,6 +79,32 @@ public class Responding : MonoBehaviour
         print("ReactThanks wurde aufgerufen");
         animator.SetTrigger("Thanked");
     }
+
+    public void Explanation2(string[] values)
+    {
+        print("Explanation2 wurde aufgerufeen");
+        CanvaNoOverlapping();
+        
+        if(schonErklaert == false)
+        {
+            _explain2Canva.SetActive(true);
+            schonErklaert = true;
+        }
+        else
+        {
+            StimulusForDiscussion();
+        }
+
+    }
+
+    public void StimulusForDiscussion()
+    {
+        _talkCanva.SetActive(true);
+
+        schonErklaert = false;
+    }
+
+
 
     //Hilfsmethode, damit sich keine zwei Canvas überlappen
     public void CanvaNoOverlapping()
@@ -73,6 +116,15 @@ public class Responding : MonoBehaviour
         _explain2Canva.SetActive(false);
         _talkCanva.SetActive(false);
         _onePage.SetActive(false);
+        _timer.SetActive(false);
+        _ausgabeFenster.SetActive(false);
+
+        if (onePageGestartet == true)
+        {
+            _onePage.SetActive(true);
+            _timer.SetActive(true);
+            _ausgabeFenster.SetActive(true);
+        }
     }
 }
 

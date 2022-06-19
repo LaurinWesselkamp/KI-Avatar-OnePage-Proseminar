@@ -21,7 +21,15 @@ public class SyncedCountdown : RealtimeComponent<IntModel>
             var rt = realtime.room.time;
             var mt = model.value;
             int ftime = startingTime - (int)(rt - mt);
-            time.text = ftime.ToString();
+            if(ftime > 0)
+            {
+                time.text = ftime.ToString();
+            }
+            else
+            {
+                time.text = "0";
+            }
+
         }
     }
 

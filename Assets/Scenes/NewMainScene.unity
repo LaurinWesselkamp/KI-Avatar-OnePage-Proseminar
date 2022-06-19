@@ -719,7 +719,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &197296024
 PrefabInstance:
@@ -1058,15 +1058,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238358760}
-  m_LocalRotation: {x: 0, y: 0.79999906, z: -0, w: -0.6000013}
-  m_LocalPosition: {x: 3.76, y: 0.89, z: 0.25}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: -1.397, y: -1.434, z: -0.357}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 422036357}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 619195200}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 253.74, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &238358764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1250,7 +1250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 34844fab031efd7428463c208a0e841d, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 34844fab031efd7428463c208a0e841d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1605,7 +1605,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -156.00006, y: 419.00003}
+  m_AnchoredPosition: {x: -156.00006, y: 356}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &296930253
@@ -1628,10 +1628,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Let's Go!\n\nFangt nun an eure Ideen/ Meinungen zum Produkt aufzuschreiben!\n\nFalls
-    ihr Fragen zur Brainstorming-Frage oder der Aufgabe habt, Fragt mich gerne so
-    etwas wie \"Ich verstehe das nicht!\". Vergesst, aber nicht vorher den A-Button
-    zu dr\xFCcken ;)"
+  m_text: "Let's Go!\n\nFangt nun an eure Ideen/ Meinungen zum Desgin des Autos aufzuschreiben!\n\nEs
+    l\xE4uft ein Timer mit 10 Min. ab. Sagt \"Stopp\" wenn er auf 0 steht oder ihr
+    fr\xFCher fertig seid, um den Prozess zu beenden.\n\nFalls ihr Fragen habt, sagt
+    \"Hilfe!\". Vergesst, aber nicht vorher den A-Button zu dr\xFCcken ;)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1726,7 +1726,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &300480885
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1936,13 +1936,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Du hast den Vorgang also noch nicht ganz Verstanden. Ich probiere es einfach
-    nochmal mit der Erkl\xE4rung!\n\nVor euch seht ihr jetzt ja das Auto. Hierzu
-    sollt ihr eure Ideen/ Meinungen aufschreiben. \n\nAuf der rechten Seite ist nun
-    eine Tastatur. Auf dieser k\xF6nnt ihr mit den Stiften in der Hand Eingaben t\xE4tigen.
-    \n\n\xDCber der Tastatur ist das Eingabefeld in dem der Text den ihr scheibt
-    erscheint.\n\n\xDCber dem Eingabefeld werden all euere Ideen abgebildet, sodass
-    ihr seht, was die anderen so schreiben."
+  m_text: "Ihr sollt gemeinsam Ideen zum Desgin des Autos sammeln und sie mit der
+    Tastatur eingeben (Dies machst du mit den Stiften).\n\nDar\xFCber seht ihr die
+    Liste mit euern Ideen, in der ihr mit den hinteren Schultertasten durchscrollen
+    k\xF6nnt.\n\nFalls ihr Ideen zum Brainstorming braucht, dann sagt nochmal \"Hilfe\".\n\nDen
+    Prozess beendet ihr mit \"Stopp\"."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1969,8 +1967,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 31
-  m_fontSizeBase: 31
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2214,7 +2212,7 @@ RectTransform:
   m_Children:
   - {fileID: 873691454}
   - {fileID: 586030411}
-  - {fileID: 1107294189}
+  - {fileID: 1107294192}
   m_Father: {fileID: 1068985109}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2258,7 +2256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00002455717, y: -0.000012040138}
+  m_AnchoredPosition: {x: -0.00002455717, y: 2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!43 &371774569
@@ -2267,7 +2265,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh171662
+  m_Name: pb_Mesh483512
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2460,7 +2458,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -67}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &387698546
@@ -2741,15 +2739,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f709d9a6ee5de8243a7e38d89d2cf4a7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.722965
+      value: 17.72297
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f709d9a6ee5de8243a7e38d89d2cf4a7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.0421393
+      value: 3.2896636
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f709d9a6ee5de8243a7e38d89d2cf4a7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.90198135
+      value: 1.1900024
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f709d9a6ee5de8243a7e38d89d2cf4a7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3481,7 +3479,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &487763487
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4219,18 +4217,21 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 619195199}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 3.5, y: 2.6253362, z: 1}
+  m_LocalRotation: {x: 0, y: 0.92387956, z: 0, w: 0.38268343}
+  m_LocalPosition: {x: -3.349, y: 2.6253362, z: 0.931}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1360004575}
+  - {fileID: 1419331057}
   - {fileID: 1259284935}
+  - {fileID: 238358762}
   - {fileID: 1772518296}
   - {fileID: 268210304}
+  - {fileID: 1320137394}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 135, z: 0}
 --- !u!1 &691179125
 GameObject:
   m_ObjectHideFlags: 0
@@ -4329,7 +4330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &692952470
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4423,6 +4424,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 152604425}
+        m_TargetAssemblyTypeName: SyncedCountdown, Assembly-CSharp
+        m_MethodName: SetActivationTime
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4561,7 +4574,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: -0.102, y: 2.757, z: 0.177}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4684,7 +4697,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -156, y: 419}
+  m_AnchoredPosition: {x: -156, y: 398}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &754800009
@@ -4708,11 +4721,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Vielleicht ist es auch eine gute Idee, dass du mal mit deinen Kollegen
-    ein Gespr\xE4ch beginnst!\n\nFun Fact: Du befindest dich gerade mit allen in
-    einem Call. Also beginne doch mal ein Gespr\xE4ch wie: \"Was haltet ihr vom Produktprototypen?\"\n\nWenn
-    du den weiteren Vorgang noch immer nicht richtig verstehst, kannst du mich sonst
-    nochmal fragen, oder auch diese Frage an deine Kollegen stellen. Manchmal ist
-    es besser es nochmal von einer anderen Person erkl\xE4rt zu bekommen."
+    ein Gespr\xE4ch beginnst!\n\nBesprecht doch mal gemeinsam die Farbe, die Gr\xF6\xDFe
+    oder die Form des Autos. Vielleicht fallen euch ja noch mehr Ideen ein. \n\nWenn
+    du weitere Hilfe brauchst, frag deine Kollegen oder sag nochmal \"Hilfe\"."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4739,8 +4750,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4827,6 +4838,24 @@ Transform:
   m_Father: {fileID: 245321580}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &808804276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1107294192}
+  - component: {fileID: 1107294191}
+  - component: {fileID: 1107294193}
+  m_Layer: 5
+  m_Name: Sekunden
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &820286339
 GameObject:
   m_ObjectHideFlags: 0
@@ -7358,6 +7387,11 @@ MonoBehaviour:
   _explain2Canva: {fileID: 383042894}
   _talkCanva: {fileID: 1636608556}
   _onePage: {fileID: 1259284934}
+  _ideenAll: {fileID: 1419331056}
+  _timer: {fileID: 1068985108}
+  _ausgabeFenster: {fileID: 1419331056}
+  schonErklaert: 0
+  onePageGestartet: 0
 --- !u!1 &959382306
 GameObject:
   m_ObjectHideFlags: 0
@@ -8177,6 +8211,7 @@ GameObject:
   - component: {fileID: 1041163817}
   - component: {fileID: 1041163816}
   - component: {fileID: 1041163815}
+  - component: {fileID: 1041163819}
   m_Layer: 0
   m_Name: Response Handler
   m_TagString: Untagged
@@ -8348,6 +8383,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 152604425}
+        m_TargetAssemblyTypeName: SyncedCountdown, Assembly-CSharp
+        m_MethodName: SetActivationTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1041163818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8378,6 +8425,38 @@ MonoBehaviour:
       - m_Target: {fileID: 956756062}
         m_TargetAssemblyTypeName: Responding, Assembly-CSharp
         m_MethodName: StartIntro
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1041163819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041163812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 591c3d6f017c11b4faa41506d75635b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wit: {fileID: 1320137393}
+  intent: Explanation2
+  confidenceThreshold: 0.6
+  valueMatchers: []
+  formattedValueEvents: []
+  onMultiValueEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 956756062}
+        m_TargetAssemblyTypeName: Responding, Assembly-CSharp
+        m_MethodName: Explanation2
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8571,7 +8650,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1068985109
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8631,31 +8710,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068985108}
   m_CullTransparentMesh: 1
---- !u!1 &1107294188
-GameObject:
+--- !u!222 &1107294191
+CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1107294189}
-  - component: {fileID: 1107294191}
-  - component: {fileID: 1107294190}
-  m_Layer: 5
-  m_Name: Sekunden
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1107294189
+  m_GameObject: {fileID: 808804276}
+  m_CullTransparentMesh: 1
+--- !u!224 &1107294192
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1107294188}
+  m_GameObject: {fileID: 808804276}
   m_LocalRotation: {x: -0, y: 0.000000044703473, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -8669,13 +8738,13 @@ RectTransform:
   m_AnchoredPosition: {x: 89, y: -38.999947}
   m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1107294190
+--- !u!114 &1107294193
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1107294188}
+  m_GameObject: {fileID: 808804276}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
@@ -8703,14 +8772,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Sek.
---- !u!222 &1107294191
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1107294188}
-  m_CullTransparentMesh: 1
 --- !u!4 &1108124389 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3909839160410306859, guid: 9cddb0a6a4ee1b249ad076daa9bba05f, type: 3}
@@ -8964,16 +9025,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259284934}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -1.9019794, y: -5.3724756, z: 21.222963}
+  m_LocalPosition: {x: -2.19, y: -5.62, z: 21.222963}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 115415009}
   - {fileID: 223029158}
-  - {fileID: 1419331057}
   - {fileID: 363066122}
   m_Father: {fileID: 619195200}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1262982530
 PrefabInstance:
@@ -9091,7 +9151,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -156, y: 419}
+  m_AnchoredPosition: {x: -156, y: 380}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1281676373
@@ -9114,9 +9174,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Alles Klar, damit haben wir das ThinkLet OnePage abgeschlossen. Ihr k\xF6nnt
-    nun die VR Brillen absetzten!\n\nEs hat sehr viel Spa\xDF gemacht mit euch zu
-    arbeiten!"
+  m_text: "Alles Klar, damit haben wir das Brainstorming abgeschlossen. \n\nDie Liste
+    mit euern Ideen, k\xF6nnt ihr weiter anschauen und damit ggf. weiterarbeiten.\n\nIch
+    hoffe ich konnte euch unterst\xFCtzen!\n\nIhr k\xF6nnt die VR Brillen nun absetzten!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9385,14 +9445,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320137392}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.734, y: 0.516, z: -1.134}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: -1.181, y: -2.1093361, z: -0.234}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1041163813}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 619195200}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1320137396
 MonoBehaviour:
@@ -9479,7 +9539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73bf471e27db38c4cbea28b224d6400c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  click: {fileID: 8300000, guid: e98bc45c5ab32d94f9fcea3ab3f0b38c, type: 3}
+  click: {fileID: 8300000, guid: f7d8562ff43284a9089787076be59946, type: 3}
   voiceExperience: {fileID: 1320137393}
 --- !u!1001 &1323121610
 PrefabInstance:
@@ -9510,7 +9570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd168fc019fa5de48a06efa8fb94aefa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.7971478
+      value: 4.82
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd168fc019fa5de48a06efa8fb94aefa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9518,7 +9578,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd168fc019fa5de48a06efa8fb94aefa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.83
+      value: -1.42
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd168fc019fa5de48a06efa8fb94aefa, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9594,7 +9654,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -156.00006, y: 419.00003}
+  m_AnchoredPosition: {x: -156.00006, y: 352}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1339379138
@@ -9617,13 +9677,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Was passiert gleich?\n\nIm folgenden werdet ihr gleich ein Auto einer
-    unbestimmten Marke sehen. Anschlie\xDFend sollt ihr eure Ideen und Meinungen
-    zu diesem Auto in die Tastatur (rechts von euch) eingeben. Dazu nutzt ihr den
-    wei\xDFen und den schwarzen \"Stift\" in euren H\xE4nden. \nOberhalb der Tastatur
-    und des Eingabefensters ist ein Fenster mit \"Die Ideen deiner Kollegen\", hier
-    seht ihr alle Ideen/ Meinungen von euch und euerer Kollegen! Durch dr\xFCcken
-    der Schultertasten auf eurem Controller k\xF6nnt ihr dann durch die Ideen gehen."
+  m_text: "Was passiert gleich?\n\nGleich werdet ihr einen Prototypen eines Autos
+    sehen.\n\nIhr sollt eure Ideen und Meinungen zum Design dieses Autos in die Tastatur
+    (die gleich rechts von euch erscheint) eingeben. Dazu nutzt ihr den wei\xDFen
+    und den schwarzen \"Stift\" in euren H\xE4nden. \n\nOberhalb der Tastatur und
+    des Eingabefensters ist gleich ein Fenster mit \"Die Ideen deiner Kollegen\",
+    hier seht ihr alle Ideen/ Meinungen von euch.\n\nDurch dr\xFCcken der Schultertasten
+    auf eurem Controller k\xF6nnt ihr dann durch die Ideen scrollen.\n\nWenn ihr
+    bereit seid, sagt  \"Start\"!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9965,7 +10026,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1411053201
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10120,7 +10181,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1419331057
 Transform:
   m_ObjectHideFlags: 0
@@ -10128,15 +10189,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419331056}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 21.652546, y: 4.5211396, z: 2.8513482}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.66134727, y: -1.0988603, z: -0.42959225}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 325273341}
   - {fileID: 1575130006}
-  m_Father: {fileID: 1259284935}
-  m_RootOrder: 2
+  m_Father: {fileID: 619195200}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1467221382
 PrefabInstance:
@@ -10698,7 +10759,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1561526743
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10780,18 +10841,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 152604425}
-        m_TargetAssemblyTypeName: SyncedCountdown, Assembly-CSharp
-        m_MethodName: SetActivationTime
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10981,7 +11030,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -69}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1647943700
@@ -11782,15 +11831,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4520454903943832, guid: fca9d4afb3743274e8f7da14019d7e0b, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4520454903943832, guid: fca9d4afb3743274e8f7da14019d7e0b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.179
+      value: -1.485
       objectReference: {fileID: 0}
     - target: {fileID: 4520454903943832, guid: fca9d4afb3743274e8f7da14019d7e0b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.073
+      value: -1.133
       objectReference: {fileID: 0}
     - target: {fileID: 4520454903943832, guid: fca9d4afb3743274e8f7da14019d7e0b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13698,7 +13747,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -156, y: 419}
+  m_AnchoredPosition: {x: -156, y: 363}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2108259161
@@ -13721,12 +13770,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Hey!\nMein Name ist KIna. \nIch bin euer Pers\xF6nlicher KI Avatar, der
-    euch  durch die heutige Produktprototyp-verbesserung leitet.\n\nWir werden im
-    folgenden das ThinkLet OnePage durchf\xFChren, was nichts anderes als ein Brainstorming
-    f\xFCr euch alle ist.\n\nWenn ihr den Text gelesen habt, dr\xFCckt den A-Button
-    auf euerem rechten Controller und sagt \"Start Intro\", alternativ k\xF6nnt ihr
-    auch den Button unten klicken."
+  m_text: "Hey!\nMein Name ist Lina. \nIch bin euer Pers\xF6nlicher KI Avatar. \n\nIch
+    werde euch durch einen Prozess leiten, wo ihr Ideen zu einem Produktprototypen
+    sammeln m\xFCsst.\n\nWir werden im folgenden das ThinkLet OnePage durchf\xFChren,
+    was nichts anderes als ein Brainstorming f\xFCr euch alle ist.\n\nWenn ihr den
+    Text gelesen habt, haltet den A-Button gedr\xFCckt. Es ert\xF6nt ein Sound und
+    dann sagt mir \"Intro\". Lasst dann den Button wieder los."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
