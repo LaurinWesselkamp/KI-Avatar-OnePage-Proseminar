@@ -5,9 +5,12 @@ using UnityEngine;
 public class Responding : MonoBehaviour
 {
     private Animator animator;
-    public GameObject _firstCanva;
-    public GameObject _secondCanva;
-    public GameObject _thirdCanva;
+    public GameObject _einleitungCanva;
+    public GameObject _brainstormingCanva;
+    public GameObject _startOnePageCanva;
+    public GameObject _endCanva;
+    public GameObject _explain2Canva;
+    public GameObject _talkCanva;
     public GameObject _onePage;
 
     // Start is called before the first frame update
@@ -34,39 +37,42 @@ public class Responding : MonoBehaviour
     public void StartIntro(string[] values)
     {
         print("StartIntro wurde aufgerufen");
-        //play introduction text
-        _firstCanva.SetActive(false);
-        _secondCanva.SetActive(true);
+        CanvaNoOverlapping();
+        _brainstormingCanva.SetActive(true);
     }
 
     public void StartOnePage(string[] values)
     {
         print("StartOnePage wurde aufgerufen");
-        //allow writing
-        if(_secondCanva.activeSelf)
-        {
-            _secondCanva.SetActive(false);
-            _thirdCanva.SetActive(true);
-            _onePage.SetActive(true);
-        }
-        else if(_firstCanva.activeSelf)
-        {
-           _firstCanva.SetActive(false);
-           _secondCanva.SetActive(true);
-        }
+        CanvaNoOverlapping();
+        _startOnePageCanva.SetActive(true);
+        _onePage.SetActive(true);
         
     }
 
     public void StopOnePage(string[] values)
     {
         print("StopOnePage wurde aufgerufen");
-        //disallow writing
+        CanvaNoOverlapping();
+        _endCanva.SetActive(true);
     }
 
     public void ReactThanks(string[] values)
     {
         print("ReactThanks wurde aufgerufen");
         animator.SetTrigger("Thanked");
+    }
+
+    //Hilfsmethode, damit sich keine zwei Canvas überlappen
+    public void CanvaNoOverlapping()
+    {
+        _einleitungCanva.SetActive(false);
+        _brainstormingCanva.SetActive(false);
+        _startOnePageCanva.SetActive(false);
+        _endCanva.SetActive(false);
+        _explain2Canva.SetActive(false);
+        _talkCanva.SetActive(false);
+        _onePage.SetActive(false);
     }
 }
 
